@@ -1,0 +1,314 @@
+*{
+    /* we have defined margin as zero so that there is no extra margin in our webpage and we a
+    re going to set all the margins */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* we are using border - box for including out border within the height and width */
+    border: border-box;
+
+}
+
+.nav-logo{
+    /* here for displaying the amazon logo its mandatory to give the height and width other wise it will not visible */
+    height: 50px;
+    width: 100px;
+}
+.navbar{
+    justify-content: space-evenly;
+/* this above line is tp spread all the content in navbar evenly */
+
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+
+    /* this dispay:flex is used to keep all the divs in same line  */
+    display: flex;
+
+    /* the cross axis from top to right it keeps everythingh in centre */
+    align-items: center;
+}
+
+/* first BOX */
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+
+.border {
+    border: 1.5px solid transparent; /* Set a transparent border initially */
+    transition: border-color 0.3s; /* Add a transition for smooth color change */
+  }
+  
+  .border:hover {
+    border-color: white; /* Change the border color on hover */
+  }
+  
+/* .border{
+    border: 1.5px transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+} */
+
+
+/* SECOND BOX */
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left:  15px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+
+/* THIRD BOX  */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius:4px ;
+    border-bottom-left-radius:4px ;
+    border: none;
+}
+
+.search-input{
+    /* here we have given the width in % So that it will occupy all the remaining space in the box */
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #febd68;
+    border-top-right-radius:4px ;
+    border-bottom-right-radius:4px ;
+    color:  #0f1111;;
+}
+
+.nav-search:hover{
+    border: 3px solid orange;
+}
+
+
+
+
+/* BOX FOUR */
+
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* BOC FIVE */
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* panel css starts fron here / 2 nd line  */
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-option p{
+    display: inline;
+    margin-left: 12px;
+}
+
+.panel-option{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+/* hero section */
+
+.hero-section{
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-mssg{
+   
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-mssg a{
+    text-decoration: none;
+    color: #007185;
+}
+
+
+
+/* content area css */
+
+.shop-section{
+
+    display: flex;
+
+    /* so flex wrap we have used to keep the other four boxex in another line  */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    
+}
+
+.box-img{
+    height:300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color: #007185;
+}
+
+/* footer */
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2{
+    
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a{
+    display: block ;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 1px solid white;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.pages{ 
+    padding-top: 25px;
+}
+
+.copywrite{
+    padding-top: 5px;
+}
